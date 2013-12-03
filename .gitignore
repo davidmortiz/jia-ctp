@@ -10,6 +10,8 @@
 /.settings
 /*.launch
 /*.tmproj
+*.iml
+/*.idea
 /ivy*
 /eclipse
 
