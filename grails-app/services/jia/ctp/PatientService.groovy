@@ -6,8 +6,6 @@ import grails.transaction.Transactional
 class PatientService {
 
     def findPatientByPatientId(String patientId) {
-
         new PatientSearchResponse(patiendId: patientId, patientName: "Test Patient Name", patientBirthdate: new Date())
-
     }
 }

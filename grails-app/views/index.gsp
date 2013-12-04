@@ -4,19 +4,28 @@
     <meta name="layout" content="main"/>
 </head>
 
+<g:javascript>
+    var getPatientId = function(){
+        return $('#patientId').text.val()
+    }
+
+</g:javascript>
+
 <body>
 
-<div class="container">
+
+
+
+<div class="patient-search" >
     <form class="form-signin">
-        <div class="input-group">
-            <span class="input-group-addon">Patient Identifier</span>
-            <input type="text" class="form-control" placeholder="Patient Identifier">
-            <button type="button" class="btn btn-default">Find Patient</button>
-        </div>
+            <input type="text" id="patientId" class="form-control" placeholder="Enter Patient ID to Get Started...">
+            %{--<g:remoteLink controller="patient" action="search" method="post" params="${}"--}%
 
+            <button type="button" class="btn btn-lg btn-primary"> <span class="glyphicon glyphicon-search"> </span>Search for Patient</button>
     </form>
+</div>
 
-</div> <!-- /container -->
+</form>
 
 </body>
 </html>
